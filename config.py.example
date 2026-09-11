@@ -1,0 +1,7 @@
+import os
+
+API_ID = int(os.getenv("API_ID", "123456"))
+API_HASH = os.getenv("API_HASH", "YOUR_API_HASH_HERE")
+STRING_SESSION = os.getenv("STRING_SESSION", "")
+
+REQUIRED_CHANNELS = ["KurtUserbot", "KurtSupport", "KurtPlugins"]

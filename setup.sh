@@ -1,3 +1,7 @@
+
+# Klasörde olduğundan emin ol
+cd ~/Kurt-Userbot 2>/dev/null || true
+
 cat <<'EOF' > setup.sh
 #!/usr/bin/bash
 

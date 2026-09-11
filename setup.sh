@@ -1,3 +1,4 @@
+cat <<'EOF' > setup.sh
 #!/usr/bin/bash
 
 # Renkler
@@ -53,12 +54,12 @@ read -p "API ID giriniz       : " api_id
 read -p "API HASH giriniz     : " api_hash
 read -p "STRING SESSION girin : " string_session
 
-cat <<EOF > config.py
+cat <<EOC > config.py
 API_ID = $api_id
 API_HASH = "$api_hash"
 STRING_SESSION = "$string_session"
 REQUIRED_CHANNELS = ["KurtUserbot", "KurtSupport", "KurtPlugins"]
-EOF
+EOC
 
 echo -e "${GREEN}✅ config.py oluşturuldu!${NC}"
 
@@ -74,3 +75,9 @@ echo -e "${PURPLE}==================================================${NC}"
 echo -e "${CYAN}• Canlı Loglar  :${NC} pm2 logs kurt-userbot"
 echo -e "${CYAN}• Bot Durumu   :${NC} pm2 status"
 echo -e "${CYAN}• Yeniden Başlat:${NC} pm2 restart kurt-userbot"
+EOF
+
+chmod +x setup.sh
+git add setup.sh
+git commit -m "feat: add automated setup script"
+git push

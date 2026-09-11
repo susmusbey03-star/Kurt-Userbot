@@ -1,7 +1,3 @@
-
-# Klasörde olduğundan emin ol
-cd ~/Kurt-Userbot 2>/dev/null || true
-
 cat <<'EOF' > setup.sh
 #!/usr/bin/bash
 
@@ -83,5 +79,5 @@ EOF
 
 chmod +x setup.sh
 git add setup.sh
-git commit -m "feat: add automated setup script"
-git push
+git commit -m "feat: add setup.sh"
+git push origin main

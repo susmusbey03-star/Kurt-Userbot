@@ -1,0 +1,6 @@
+Kurt-Userbot/
+├── core/                <-- Bu yeni açacağın klasör
+│   ├── loader.py        <-- Klasörün içindeki 1. dosya
+│   ├── database.py      <-- Klasörün içindeki 2. dosya
+│   ├── security.py      <-- Klasörün içindeki 3. dosya
+│   └── logger.py        <-- Klasörün içindeki 4. dosya
